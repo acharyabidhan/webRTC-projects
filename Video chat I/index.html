@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>P2P Video Chat</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="menu">
+        <p>Your ID:</p>
+        <p id="uuid"></p>
+        <input type="text" placeholder="Peer id" />
+        <button onclick="callUser()">Connect</button>
+    </div>
+    <div id="live">
+        <video autoplay="true" id="remote-video"></video>
+        <video autoplay="true" id="local-video" muted="true"></video>
+        <button id="end-call" onclick="endCall()">End Call</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
